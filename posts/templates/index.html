@@ -1,0 +1,14 @@
+<h1>Posts</h1>
+{% for post in posts %}
+
+
+<li>{{post}} | {{post.author}}</li>
+<li> -- comment {% for comments in posts.comments %}
+    {{comments}} | {{comments.author}}
+    {% endfor%}
+</li>
+
+
+
+
+{% endfor%}
